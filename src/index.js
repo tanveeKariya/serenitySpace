@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client"; // Use the new 'react-dom/client' package
+import Navbar from "./components/Navbar"; // Importing Navbar directly
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Hero from "./components/Hero";
+import KeyFeatures from "./components/KeyFeatures";
+import FAQ from "./components/FAQ";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create a root using createRoot()
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render both Navbar and Hero components
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <>
+    <Navbar />
+    <Hero />
+    <KeyFeatures />
+    <FAQ /> 
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+   
+  </>
+);

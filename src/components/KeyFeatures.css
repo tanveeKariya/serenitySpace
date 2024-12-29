@@ -1,0 +1,112 @@
+/* KeyFeatures.css */
+
+.key-features {
+    display: flex;
+    justify-content: flex-start; /* Align to left */
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .key-features .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .key-features .image-section {
+    width: 50%;
+  }
+  
+  .key-features .image {
+    width: 125%;
+    height: 150%;
+    position:relative;
+    left : -25%;
+    
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .key-features .content-section {
+    width: 50%;
+    padding-left: 40px; 
+    padding-bottom: 40px;
+  }
+  
+  .key-features .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .key-features .feature {
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+
+  }
+  .key-features .feature:hover {
+    background-color: #e2e6ea; /* Darker shade of gray */
+}
+  
+  .key-features .feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .key-features .feature-description {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .key-features .feature:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .key-features {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      height: auto;
+    }
+  
+    .key-features .image-section,
+    .key-features .content-section {
+      width: 100%;
+    }
+  
+    .key-features .content-section {
+      padding-left: 0; /* Remove padding on small screens */
+    }
+  
+    .key-features .title {
+      font-size: 2rem;
+    }
+  
+    .key-features .feature-title {
+      font-size: 1.2rem;
+    }
+  
+    .key-features .feature-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .key-features .title {
+      font-size: 1.5rem;
+    }
+  
+    .key-features .feature-title {
+      font-size: 1rem;
+    }
+  
+    .key-features .feature-description {
+      font-size: 0.8rem;
+    }
+  }
+  
