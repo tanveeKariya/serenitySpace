@@ -66,41 +66,7 @@ const Av = () => {
         </div>
       </div>
     </div>
-    <div class="av-container">
-   <div class="av-image-section">
-    <img alt="A scenic forest path with tall trees and a rocky trail" height="400" src="https://storage.googleapis.com/a1aa/image/mZUrKIN8gop1JBiTD0Q81DA4Ff6QBV79o28ameIZNc0FDFAUA.jpg" width="600" class="av-image"/>
-   </div>
-   <div class="av-content-section">
-    <h1 class="av-heading">
-     Why Use Audio &amp; Video Resources?
-    </h1>
-    <div class="av-feature">
-     <h2 class="av-feature-heading">
-      Ease of Access
-     </h2>
-     <p class="av-feature-description">
-      Stream playlists and videos anytime, anywhere.
-     </p>
-    </div>
-    <div class="av-feature">
-     <h2 class="av-feature-heading">
-      Variety of Choices
-     </h2>
-     <p class="av-feature-description">
-      From meditation to focus, find the perfect match for your needs.
-     </p>
-    </div>
-    <div class="av-feature">
-     <h2 class="av-feature-heading">
-      Scientifically Curated
-     </h2>
-     <p class="av-feature-description">
-      Expert-recommended tracks to enhance relaxation and productivity.
-     </p>
-    </div>
-   </div>
-</div>
-
+    
     </>
   );
 };

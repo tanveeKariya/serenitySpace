@@ -1,204 +1,145 @@
-/* av.css */
-
 /* General Styles */
-.body-container {
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f8f9fa;
-    }
-  }
-  
-  /* Section 1: Relax with Audio & Video */
-  .audio-video-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .audio-video-text {
-    max-width: 50vw;
-    margin-right: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    transform: translateX(-0.5rem);
-
-  }
-  
-  .audio-video-text h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #000000;
-    margin: 10px 0;
-  }
-  
-  .audio-video-text p {
-    font-size: 20px;
-    color: #3b82f6;
-    margin: 10px 0;
-    font-weight: 600;
-  }
-  
-  .audio-video-button {
-    background-color: #3b82f6;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    /* transform : translateX(2rem); */
-  }
-  
-  .audio-video-image img {
-    /* max-width: 100%; */
-    border-radius: 10px;
-    width: 40vw;
-    height: 60vh;
-    transform: translateX(2rem);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Section 2: Relaxation and Focus */
-  .relaxation-focus-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  max-width: 100%;
-  margin-right: 20px;
-  }
-  
-  .relaxation-card {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    overflow: hidden;
-    width: 45%;
-    height: 300px;
-    display: flex;
-    transform: translateX(-2rem);
-    align-items: center;
-  }
-  
-  .relaxation-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 10px;
-  }
-  
-  .relaxation-card-content {
-    padding: 20px;
-  }
-  
-  .relaxation-card-content h3 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-  
-  .relaxation-card-content p {
-    margin: 10px 0 0;
-    font-size: 1em;
-    color: #666;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .audio-video-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .audio-video-text {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .relaxation-card {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .relaxation-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 0;
-    }
-  }
-  body {
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f8f9fa;
 }
+
+/* Container for Sections */
 .av-container {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* max-width: 1200px; */
     width: 100%;
 }
+
+/* Styling for Images */
 .av-image-section {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
+
 .av-image-section .av-image {
-    width: 45vw;
-    height: 80vh;
-    object-fit: cover;
-    border-radius: 50px;
-    transform: translateX(5rem);
+    width: 100%;
+    height: auto;
+    max-width: 45vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Content Section */
 .av-content-section {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
+
+/* Headings and Text Styling */
 .av-content-section .av-heading {
     font-size: 2rem;
     font-weight: 700;
+    color: #333;
     margin-bottom: 20px;
 }
+
 .av-content-section .av-feature {
     margin-bottom: 20px;
 }
+
 .av-content-section .av-feature .av-feature-heading {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    color: #555;
 }
+
 .av-content-section .av-feature .av-feature-description {
     font-size: 1rem;
-    color: #6c757d;
+    color: #777;
 }
+
+/* Button Styling */
+.av-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.av-button:hover {
+    background-color: #2563eb;
+}
+
+/* Relaxation and Focus Section Styling */
+.relaxation-focus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.relaxation-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 45%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.relaxation-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.relaxation-card-content {
+    padding: 20px;
+}
+
+.relaxation-card-content h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+}
+
+.relaxation-card-content p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .av-container {
         flex-direction: column;
     }
     .av-content-section {
         padding: 20px;
+    }
+    .relaxation-card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .relaxation-card img {
+        width: 100%;
+        height: auto;
     }
 }
