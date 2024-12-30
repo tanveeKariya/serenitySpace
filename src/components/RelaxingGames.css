@@ -1,0 +1,65 @@
+.relaxing-games-container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #fff;
+}
+
+.relaxing-games-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.relaxing-games-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.relaxing-game-card {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.relaxing-game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.relaxing-game-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.relaxing-game-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.relaxing-game-description {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.relaxing-game-price {
+  color: #007bff;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .relaxing-game-card {
+    width: 100%;
+  }
+}

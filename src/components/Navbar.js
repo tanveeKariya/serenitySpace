@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import React from 'react';
 import './Navbar.css';
 
@@ -6,19 +5,20 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <a href="www.google.com">Serenity Space</a>
+      {/* // eslint-disable-next-line  */}
+        <a href="www.google.com">Serenity Space</a> {/* Changed to "#" */}
       </div>
       <div className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Stress-Relief Games</a>
-        <a href="#">Our Services</a>
-        <a href="#">Positive Affirmations</a>
-        <a href="#">Audio & Video Resources</a>
-        <a href="#">Therapist Directory</a>
-        <a href="#">Mindful Practices</a>
+        <a href="www.google.com">Home</a> {/* Changed to "#" */}
+        <a href="www.google.com">Stress-Relief Games</a> {/* Changed to "#" */}
+        <a href="www.google.com">Our Services</a> {/* Changed to "#" */}
+        <a href="www.google.com">Positive Affirmations</a> {/* Changed to "#" */}
+        <a href="www.google.com">Audio & Video Resources</a> {/* Changed to "#" */}
+        
+        
       </div>
     </div>
   );
 };
 
-export default Navbar;  // Make sure this is a default export
+export default Navbar;

@@ -1,0 +1,162 @@
+.fyp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.fyp-text-content {
+  max-width: 50%;
+}
+
+.fyp-text-content .fyp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #000000;
+  align-self: start;
+}
+
+.fyp-text-content .fyp-description {
+  font-size: 1.25rem;
+  color: #1a73e8;
+  margin: 0.5rem 0;
+}
+
+.fyp-text-content .fyp-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    align-items: center;
+    transform: translateX(8rem);
+}
+
+.fyp-image-content .fyp-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .fyp-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fyp-text-content,
+  .fyp-image-content {
+    max-width: 100%;
+  }
+
+  .fyp-text-content {
+    margin-bottom: 2rem;
+  }
+}
+
+.why-affirmations-matter__container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* max-width: 900px; */
+    width: 100%;
+  }
+  
+  .why-affirmations-matter__image-section {
+    flex: 1;
+  }
+  
+  .why-affirmations-matter__image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .why-affirmations-matter__content-section {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .why-affirmations-matter__content-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .why-affirmations-matter__content-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .why-affirmations-matter__content-section p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  .affirmation-container {
+    display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 100vw;
+            width: 100%;
+            padding: 20px;
+  }
+  
+  .affirmation-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right : 2px;
+  }
+  
+  .affirmation-image {
+    width: 40vh;
+            height: 40vh;
+            object-fit: cover;
+  }
+  
+  .affirmation-content {
+    padding: 20px;
+  }
+  
+  .affirmation-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .affirmation-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+  }
+  

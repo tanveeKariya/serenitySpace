@@ -1,0 +1,107 @@
+/* Footer.css */
+
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px 40px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6c757d;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.icon.facebook {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/124/124010.png'); /* Replace with your Facebook icon */
+}
+
+.icon.twitter {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png'); /* Replace with your Twitter icon */
+}
+
+.icon.instagram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1409/1409946.png'); /* Replace with your Instagram icon */
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
